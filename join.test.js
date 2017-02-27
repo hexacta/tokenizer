@@ -18,4 +18,4 @@ test(macro, "soon...");
 test.skip(macro, "soon ...");
 test(macro, 'one "two three" four');
 test(macro, '"one two" three');
-test.skip(macro, 'one\ntwo');
+test(macro, 'one\ntwo');

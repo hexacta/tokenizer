@@ -66,8 +66,8 @@
   var eol = /\n/;
   var other = /\S+/;
 
-  var opening = /^['"`¿¡:([{]$/;
-  var closing = /^[.,;!?'"`:)\]}]$/;
+  var opening = /^['"`¿¡:([{\n]$/;
+  var closing = /^[.,;!?'"`:)\]}\n]$/;
   var quotes = /^['"`]$/;
 
   // Emoji regex from: https://github.com/mathiasbynens/emoji-regex
