@@ -16,3 +16,6 @@ test(macro, "2.3 million");
 test(macro, "02:30 am");
 test(macro, "soon...");
 test.skip(macro, "soon ...");
+test(macro, 'one "two three" four');
+test(macro, '"one two" three');
+test.skip(macro, 'one\ntwo');

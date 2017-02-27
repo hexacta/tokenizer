@@ -30,13 +30,21 @@
     }
 
     var text = tokens[0];
+    var openQuotes = {};
+		openQuotes[text] = true;
+
     for (var i = 1; i < tokens.length; i++) {
       var token = tokens[i];
-      if (token.match(closing) || tokens[i - 1].match(opening)) {
-        text += token;
-      } else {
-        text += " " + token;
-      }
+      var prev = tokens[i - 1];
+
+      var prevOpening = prev.match(quotes) ? openQuotes[prev] : prev.match(opening);
+      var thisClosing = token.match(quotes) ? openQuotes[token] : token.match(closing);
+			var sep = prevOpening || thisClosing? "" : " ";
+			text += sep + token;
+			
+			if (token.match(quotes)) {
+				openQuotes[token] = !openQuotes[token];
+			}
     }
 
     return text;
