@@ -1,0 +1,27 @@
+{
+  "name": "hx-tokenizer",
+  "version": "0.0.0",
+  "description": "Split text into tokens.",
+  "keywords": [
+    "nlp",
+    "tokenizer",
+    "tokenize",
+    "browser",
+    "node",
+    "spit",
+    "join",
+    "text",
+    "words"
+  ],
+  "main": "tokenizer.js",
+  "scripts": {
+    "test": "ava",
+    "test:watch": "ava --watch"
+  },
+  "repository": "git@github.com:hexacta/tokenizer.git",
+  "author": "pomber <pombopombopombo@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.18.2"
+  }
+}
