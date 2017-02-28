@@ -18,4 +18,7 @@ test(macro, "soon...");
 test.skip(macro, "soon ...");
 test(macro, 'one "two three" four');
 test(macro, '"one two" three');
-test(macro, 'one\ntwo');
+test(macro, "one\ntwo");
+test(macro, "Watch: http://t.co/foo");
+test(macro, "one… two");
+test(macro, "We're going");

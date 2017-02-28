@@ -29,3 +29,8 @@ test(macro, '"one two" three', ['"', "one", "two", '"', "three"]);
 test(macro, "one & two", ["one", "&", "two"]);
 test(macro, "one: two", ["one", ":", "two"]);
 test(macro, "one.two", ["one", ".", "two"]);
+test(macro, "one… two", ["one", "…", "two"]);
+test(macro, "barça", ["barça"]);
+test(macro, "Verão", ["Verão"]);
+test(macro, "déjà vu", ["déjà", "vu"]);
+test(macro, "We're going", ["We're", "going"]);
