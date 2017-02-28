@@ -58,10 +58,10 @@
   // Regexes:
   var url = /[a-z]+:\/\/[a-z0-9-_]+.[a-z0-9-_:%&~?/.=]+/;
   var hashtag = /[#]+[a-z0-9-_]+/;
-  var mention = /\B@[a-z0-9_-]+/;
+  var mention = /(^.)?\B@[a-z0-9_-]+/;
   var smiley = /:\(|:\)|:P|:p|:O/;
   var punctuation = /[.,;…'¿¡!?"`:()[\]{}]/;
-  var words = /[a-zà-úü'-]+\d*/;
+  var words = /[a-zà-úü'’-]+\d*/;
   var acronyms = /([a-z]\.){2,}/;
   var eol = /\n/;
   var other = /\S+/;

@@ -33,4 +33,4 @@ test(macro, "one… two", ["one", "…", "two"]);
 test(macro, "barça", ["barça"]);
 test(macro, "Verão", ["Verão"]);
 test(macro, "déjà vu", ["déjà", "vu"]);
-test(macro, "We're going", ["We're", "going"]);
+test(macro, "We’re going", ["We’re", "going"]);
